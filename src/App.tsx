@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from "./components/CustomButtonComponent";
 
 function App() {
   return (
@@ -16,8 +17,20 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React Demo
         </a>
+        <>
+      <h1>Colorful Custom Button Components</h1>
+      <Button 
+        border="none"
+        color="pink"
+        height = "200px"
+        onClick={() => alert("You clicked on the pink circle!")}
+        radius = "50%"
+        width = "200px"
+        children = "I'm a pink circle!"
+      />
+    </>
       </header>
     </div>
   );
